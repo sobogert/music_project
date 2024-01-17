@@ -1,0 +1,6 @@
+{
+  "CLIENT_ID": "e3b3245ac5f845cda0e8e931c5917224",
+  "CLIENT_SECRET": "faefd497fc994837a9bf06f49646541d",
+  "REDIRECT_URI": "http://127.0.0.1:5000/callback",
+  "SCOPE": "streaming"
+}

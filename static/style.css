@@ -1,0 +1,106 @@
+@import './design.css';
+
+body {
+    background-color: var(--white);
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    color: var(--black);
+}
+
+h1, .test-text, .test-text-2, .marquee {
+    font-size: 96px;
+    font-family: Chillax, sans-serif;
+    font-weight: 900;
+}
+
+.page {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: clip;
+}
+
+#_wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 12%;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 40s linear infinite;
+    transition: 0.1s;
+}
+
+.marquee p {
+    display: inline-flex;
+    align-items: center;
+    margin-block: 0;
+}
+
+.duddely {
+    margin-right: 3px;
+    margin-left: 32px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.box {
+    border: 4px solid var(--black);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: 20%;
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+}
+#_selectSong {
+    height: 60px;
+    width: 184px;
+}
+
+#_selectMode {
+    height: 60px;
+    width: 200px;
+}
+
+#_analyse {
+    height: 300px;
+    width: 100%;
+}
+
+.footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.spotify-logo {
+    height: 30px;
+}

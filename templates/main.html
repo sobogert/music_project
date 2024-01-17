@@ -1,10 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Music Visualisation site</title>
-</head>
-<body>
-    <h1> Test! </h1>
-</body>
-</html>
+<meta charset="UTF-8">
+<title>Music Visualisation site</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<link rel="icon" href="{{ url_for('static', filename='duddely.png') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+
+<div class="page">
+
+    <!-- Start Title -->
+    <div id="_wrapper">
+        <div class="marquee" id="_marquee">
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+            <p class="title">
+                Duddley Eats the Colors
+                <img class="duddely" src="{{url_for('static', filename='duddely.svg')}}" alt="studely duddely" />
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="_login">
+        </div>
+        <div class="top-line">
+            <div class="box" id="_selectSong">
+
+            </div>
+            <div class="box" id="_selectMode">
+
+            </div>
+        </div>
+        <div class="box" id="_analyse">
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-line">Made with data from
+        <img class="spotify-logo" src="{{url_for('static', filename='Spotify_Logo_RGB_Black.png')}}" alt="Spotify logo" />
+        </div>
+    </footer>
+</div>
